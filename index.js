@@ -40,7 +40,8 @@ class Client {
 					height: item.image.thumbnailHeight
 				},
 				description: item.snippet,
-				parentPage: item.image.contextLink
+				parentPage: item.image.contextLink,
+				page: options.page || 1
 			}));
 		});
 	}
